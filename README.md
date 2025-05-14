@@ -62,6 +62,9 @@
   - zeroshot pipeline
   
 ## 시스템 아키텍쳐
+<img width="937" alt="image" src="https://github.com/user-attachments/assets/b66d665f-857e-4d08-a3f8-688c37630c5c" />
+
+
 
 ## 요구사항 명세서
 
