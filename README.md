@@ -182,8 +182,7 @@
 
 ## 테스트 및 시연
 
-<iframe width="560" height="315" src="https://youtu.be/JO37_hp9D7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+[![영상 제목](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/JO37_hp9D7Q)
 ## 프로젝트 회고
 
 |   이름   |    내용    | 
