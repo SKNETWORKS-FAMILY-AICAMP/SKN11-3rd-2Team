@@ -181,8 +181,8 @@
 ![](./img/파인튜닝.png)
 
 ## 테스트 및 시연
+{% include video id="JO37_hp9D7Q" provider="youtube" %}
 
-[![영상 제목](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/JO37_hp9D7Q)
 ## 프로젝트 회고
 
 |   이름   |    내용    | 
