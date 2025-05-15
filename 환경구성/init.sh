@@ -34,4 +34,8 @@ pyenv activate llm_env
 
 pip install --upgrade pip
 
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+pip install -r requirements.txt
+
 echo "LLM 개발 환경 설정 완료!"
