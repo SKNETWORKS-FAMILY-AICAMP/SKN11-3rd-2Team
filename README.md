@@ -169,15 +169,20 @@
 3. 문장 유사도를 1차적으로 개선하기 위해 수작업으로 게시판 이름을 바탕으로 정보글과 질문글 분류
 4. 파인튜닝 과정에서 나온 결과물인 모델의 토크나이저가 정상적이지 않음 -> 베이스 모델의 토크나이저를 사용하여 모델 성능 개선
 5. 모델의 용량은 크지만 런팟은 재구동시 데이터가 휘발 되는 특성을 보완하고자 huggingface에 모델을 업로드하여 cloud 기반으로 모델 관리
+6. 단일 Chroma 벡터 디비 시스템 -> 다중 Chroma 벡터 디비 시스템
+7. 속도 향상을 위한 FAISS 백터 DB 도입
 
 
 ## 수행 결과
+### 백터 디비(FIASS,Chroma) 기반 응답 시스템
+![](./Img/벡터디비.png)
 
-
+### 파인 튜닝 모델 기반 응답 시스템
+![](./Img/파인튜닝.png)
 
 ## 테스트 및 시연
 
-
+<iframe width="560" height="315" src="https://youtu.be/JO37_hp9D7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 프로젝트 회고
 
