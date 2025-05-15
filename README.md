@@ -6,9 +6,9 @@
 
 ### 팀 멤버
 
-| 형주핑 (해핑) | 준희핑 | 근핑 | 현대핑 | 현민핑 (나그네핑) |
+| 형주핑 | 준희핑 | 근핑 | 현대핑 | 현민핑 |
 |:-----:|:-----:|:-----:|:-----:|:-----:|
-| <img src="https://avatars.githubusercontent.com/u/00000001?v=4" width="100"/> | <img src="https://avatars.githubusercontent.com/u/00000002?v=4" width="100"/> | <img src="https://avatars.githubusercontent.com/u/00000003?v=4" width="100"/> | <img src="https://avatars.githubusercontent.com/u/00000004?v=4" width="100"/> | <img src="https://avatars.githubusercontent.com/u/00000005?v=4" width="100"/> |
+| <img src="https://i.namu.wiki/i/j0S1ukGRi1C_AAeQDIHrt30cuQDVYwruBJRWpekny99aQKzDbX1PSmS51efVPDepp_e1oAuLdH_8QvDqSrX7uAnfQOZyHyLW1GFi_XnWEwMWKzpXFBikJ3qTXV6Q2qVb7pEgO0HiiWtjuYKpk-kZNA.webp" width="100"/> | <img src="https://i.namu.wiki/i/NWbxBpJRCVvReBHcxM_bQOxTAmPBkas_l4jeIkfzGdyWglEXS92QXOqzN17RGMBMweMKmtf7tD4VOkv_pmKlX5mE0l3AomEHKyfdeHOq7TAqfFho31hMxxhG2_GMKkhxG3yncu3NkfVbZQVfmXWG9Q.webp" width="100"/> | <img src="https://i.namu.wiki/i/gGhk93pYotJkQQ2VcOfDcPG4wNp8J7uJriA-53YImeg6qaixQIQoj6TnveA4IHm2Rz6j0OAwIFbA1IgoxlNsO2_Ak7le4L2j4tOuBiPg7enEPb65dr6eT8yL0apBaEPzPc2s_GWYDp8a6dp4kbOyOg.webp" width="100"/> | <img src="https://i.namu.wiki/i/rlaXL6whktZVwfLOV0pPQnbHEKCaFI9wfeVpD-mTYf0K5t-G09AQOOO7UPpZMWV_2l3ePEOIDVqA4rXLPHKxdDa-SPHOnk4dyW1JF3r6FyZq-KE-YJxQYLMrCCeENqocCrA7PK6GX3KZIoC-Daq8Hg.webp" width="100"/> | <img src="https://i.namu.wiki/i/mAdeCVXZSBD17XnMVl315reuLuA92ywvT9zIUV2XCnGtfFQz3KJy4dBGnv7y0NZDxfi7PJw4LApnXot6UWgewgi2CADirduSlRAdrJhnY4NSV7wYKOC8qV76M4No3Rcb10FYisJC8AC8p6ttAGeeDw.webp" width="100"/> |
 | [@김형주](https://github.com/Kim-Hyeong-Ju) | [@신준희](https://github.com/hybukimo) | [@이근](https://github.com/REROUN) | [@이현대](https://github.com/kicet3) | [@이현민](https://github.com/hyunmin6109) |
 
 
@@ -74,22 +74,28 @@
 
 
 
-## 요구사항 명세서
+## 📜요구사항 명세서
 
-| 기능 ID | 기능명 | 설명 |
-|-------|--------|------|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| 대분류       | RQ_ID     | 기능 명칭               | 구현 기능                                           | 추가 설명 |
+|--------------|-----------|------------------------|----------------------------------------------------|------------|
+| **시스템 구성** |
+| 시스템 구성   | FDATA_01  | 문서 기반 질의응답       | 질문 관련 문서 검색 후 응답 생성                        | 크롤링된 HTML 데이터 기반 응답 |
+| 시스템 구성   | FDATA_02  | Vector DB 문서 임베딩    | ChromaDB 및 FAISS로 문서 벡터화 및 검색                | RAG용 사전 구축 완료 |
+| 시스템 구성   | FDATA_03  | 문서 메타데이터 구조화    | 발달시기, 카테고리 등 정보 구조화 포함                  | 응답 근거로 명시 가능 |
+|**응답생성**   |
+| 응답 생성     | FLLM_01   | 파인튜닝 응답 생성        | KoAlpaca 로컬 모델 기반 응답                           | LoRA 기반 파인튜닝 적용 |
+| 응답 생성     | FLLM_02   | 크롤링 데이터 중심 응답 구성 | 크롤링 문서 기반 ➝ 요약 ➝ 결론 구조로 응답              | 이해하기 편한 간단한 응답 구성 |
+|**인터페이스**|
+| 인터페이스   | FWEB_01   | 채팅 UI                 | Streamlit 기반 채팅 구성                              | 직관적인 UX 유지 |
+| 인터페이스   | FWEB_02   | 대화 기억 유지            | 이전 질문/응답 상태 기억                              | 세션 기반 메모리 유지 |
 
 ## WBS
 
 | Phase                | Task                  | 담당자        | 기간          | 진척율 |
 |----------------------|-----------------------|--------------|-------------- |--------|
+| **기획** |
 | 주제 선정             | 주제 선정          | ALL          | 05.02 - 05.07 | 완료 |
+| **분석/설계** |
 | 데이터 수집 및 처리   | 데이터 크롤링       | ALL          | 05.07 - 05.12 | 완료 |
 |                      | 데이터 정제        | ALL           | 05.12 - 05.13 | 완료 |
 | 모델 설계 및 학습     | 모델 선정          | ALL           | 05.13         | 완료 |
@@ -97,6 +103,7 @@
 |                      | 평가 및 테스트     | 이현대, 이 근  | 05.14 - 05.15 |      |
 | 문서 검색 시스템(POC) | 임베딩 모델 적용    | 김형주, 신준희 | 05.14         |      |
 |                      | CHROMA 구축        | ALL           | 05.14        |      |
+| **** |
 | 중간 발표 시연 페이지 | UI/UX 설계          | ALL          | 05.14        | 완료 |
 |                      | Streamlit 구현     |     김형주    | 05.14        | 완료 |
 | 중간 발표 문서화      | README 작성        | 김형주, 신준희 | 05.14        |      |
@@ -157,7 +164,7 @@
 |   이름   |    내용    | 
 |---------|------------|
 |**김형주**||
-|**신준희**||
+|**신준희**| 크롤링한 데이터를 정제하는데 많은 노력을 했습니다. 특히 비문이나 불용어 처리에 많이 했습니다. 데이터 임베딩과 벡터 DB에 저장하는 과정과 파인튜닝을 거치면서 NLP과 LLM 모델에 대해 많이 알게 되었습니다.
 |**이 근**||
 |**이현대**||
 |**이현민**||
