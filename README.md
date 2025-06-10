@@ -50,6 +50,7 @@
 | Database | <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=next.js&logoColor=white" height="20"/> |
 | LLM 모델 | <img src="https://img.shields.io/badge/exaone-A50034?style=for-the-badge&logo=lg&logoColor=white" height="20"/> |
 | UI | <img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" height="20"/> |
+
 <br><br>
 
 
