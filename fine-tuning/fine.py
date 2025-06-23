@@ -119,7 +119,6 @@ tokenized_val = val_dataset.map(
 )
 
 # 데이터 콜레이터 설정
-# 데이터 콜레이터 설정
 data_collator = DataCollatorForLanguageModeling(
     tokenizer=tokenizer,
     mlm=False,         # 인과적 언어 모델링에 맞게 설정
